@@ -3,64 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simon Bot</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0e1013;
-      color: white;
-      text-align: center;
-    }
-    header {
-      background-color: #1c1e22;
-      padding: 30px 20px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.8em;
-    }
-    header p {
-      color: #aaa;
-    }
-    .invite-btn {
-      background-color: #5865F2;
-      color: white;
-      padding: 15px 30px;
-      font-size: 18px;
-      text-decoration: none;
-      border-radius: 10px;
-      display: inline-block;
-      margin-top: 20px;
-    }
-    section {
-      padding: 60px 20px;
-    }
-    footer {
-      background-color: #1c1e22;
-      color: #aaa;
-      padding: 20px;
-    }
-  </style>
+  <title>Simon Bot | Página Oficial</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <h1>Simon Bot</h1>
-    <p>Tu bot multipropósito para moderación, diversión, niveles y mucho más.</p>
-    <a href="#" class="invite-btn">Invitá a Simon Bot</a>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Header -->
+  <header class="bg-gray-800 p-6 text-center shadow-lg">
+    <img src="https://via.placeholder.com/100x100?text=SB" alt="Simon Bot Logo" class="mx-auto rounded-full mb-2">
+    <h1 class="text-3xl font-bold">Simon Bot</h1>
+    <p class="text-gray-300 mt-2">Tu bot multipropósito para Discord con moderación, diversión y mucho más.</p>
+    <div class="mt-4 space-x-4">
+      <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded">Invítame</a>
+      <a href="#soporte" class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded">Soporte</a>
+    </div>
   </header>
 
-  <section>
-    <h2>¿Qué hace Simon Bot?</h2>
-    <p>Simon Bot es un bot completo para Discord que ofrece:</p>
-    <ul style="text-align: left; max-width: 600px; margin: auto;">
-      <li>✔️ Moderación automática y manual</li>
-      <li>🎮 Juegos y comandos de diversión</li>
-      <li>📈 Sistema de niveles</li>
-      <li>📢 Anuncios y sugerencias</li>
-      <li>🛠️ Personalización total</li>
+  <!-- Características -->
+  <section class="p-8">
+    <h2 class="text-2xl font-bold mb-4">Características</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-gray-800 p-4 rounded shadow">
+        <h3 class="text-xl font-semibold">Moderación</h3>
+        <p class="text-gray-400">Sistema de baneos, advertencias, muteos y protección del servidor.</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded shadow">
+        <h3 class="text-xl font-semibold">Niveles y XP</h3>
+        <p class="text-gray-400">Sistema de niveles automático con roles por actividad.</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded shadow">
+        <h3 class="text-xl font-semibold">Auto-roles</h3>
+        <p class="text-gray-400">Asigna roles automáticamente al entrar al servidor.</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded shadow">
+        <h3 class="text-xl font-semibold">Comandos personalizados</h3>
+        <p class="text-gray-400">Crea tus propios comandos para tu comunidad.</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded shadow">
+        <h3 class="text-xl font-semibold">Juegos y diversión</h3>
+        <p class="text-gray-400">Juegos como trivia, dados, encuestas y más.</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded shadow">
+        <h3 class="text-xl font-semibold">Sistema de exámenes</h3>
+        <p class="text-gray-400">Evalúa a tus usuarios con exámenes configurables.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comandos -->
+  <section class="p-8 bg-gray-800">
+    <h2 class="text-2xl font-bold mb-4">Comandos Populares</h2>
+    <ul class="list-disc list-inside text-gray-300 space-y-1">
+      <li><code>!ban</code> – Banea a un usuario.</li>
+      <li><code>!warn</code> – Advierte a un usuario.</li>
+      <li><code>!nivel</code> – Muestra tu nivel actual.</li>
+      <li><code>!encuesta</code> – Crea encuestas interactivas.</li>
+      <li><code>!rolauto</code> – Configura auto-roles.</li>
+      <li><code>!examen</code> – Inicia un examen.</li>
     </ul>
   </section>
+
+  <!-- Soporte -->
+  <section id="soporte" class="p-8">
+    <h2 class="text-2xl font-bold mb-4">Soporte</h2>
+    <p class="text-gray-300 mb-2">¿Necesitás ayuda o querés reportar un error?</p>
+    <a href="#" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded">Únete a nuestro servidor de soporte</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 p-4 text-center text-gray-500">
+    &copy; 2025 Simon Bot. Creado por HarmicZn.
+  </footer>
+</body>
+</html>
 
   <footer>
     &copy; 2025 Simon Bot. Sitio creado por HarmicZn.
